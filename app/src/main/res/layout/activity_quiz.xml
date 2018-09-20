@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#bcaaaa"
+    android:padding="20dp"
+    tools:context="com.example.lenovo.project1.QuizActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:0"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:id="@+id/tv1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Questions:1/3"
+        android:layout_below="@+id/tv1"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:id="@+id/tv2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:30"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv1"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:id="@+id/tv3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here is my question"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/rg1"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/tv4"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/rg1">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:textSize="20dp"
+            android:id="@+id/rb1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 4"
+            android:textSize="20dp"
+            android:id="@+id/rb2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:textSize="20dp"
+            android:id="@+id/rb3"/>
+    </RadioGroup>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/rg1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:text="Confirm"
+    android:id="@+id/bt1"/>
+
+</RelativeLayout>
